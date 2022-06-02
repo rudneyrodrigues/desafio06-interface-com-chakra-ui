@@ -20,7 +20,11 @@ interface ISlidesProps {
 
 export function Slides({ continents }: ISlidesProps) {
   return (
-    <Box position="relative" w="100%" h="28rem" mt={["1.25rem", "3.25rem"]}>
+    <Box
+      position="relative"
+      w="100%"
+      mt={["1.25rem", "3.25rem"]}
+    >
       <Swiper
         modules={[Navigation, Pagination]}
         navigation={true}

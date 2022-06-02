@@ -1,11 +1,15 @@
 .swiper-button-next {
-  color: #ffba08;
+  color: #ffba08 !important;
 }
 
 .swiper-button-prev {
-  color: #ffba08;
+  color: #ffba08 !important;
 }
 
 .swiper-pagination-bullet-active {
+  background-color: #ffba08;
+}
+
+.swiper-pagination-bullet {
   background-color: #ffba08;
 }

@@ -13,7 +13,7 @@ export function Slide({ title, subtitle, backgroundImage, href }: SlideProps) {
     <Flex
       align="center"
       justify="center"
-      h="28rem"
+      h={["15rem", "28rem"]}
       flexDir="column"
       backgroundImage={backgroundImage}
       backgroundSize="cover"

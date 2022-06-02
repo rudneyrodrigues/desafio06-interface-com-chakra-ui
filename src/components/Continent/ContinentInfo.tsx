@@ -37,7 +37,7 @@ export function ContinentInfo({ title, number, moreInfo = false }: ContinentInfo
 
         {moreInfo && (
           <Tooltip
-            label="Mais informações"
+            label="Cidades mais visitadas"
             backgroundColor="brand.100"
             fontWeight="bold"
           >

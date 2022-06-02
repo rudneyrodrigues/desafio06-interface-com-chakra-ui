@@ -3,9 +3,10 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 
 import { Header } from "../components/Header";
-import { continents } from "../utils/continents";
 import { ContinentDetails } from "../components/Continent/ContinentDetails";
 import { ContinentCities } from "../components/Continent/ContinentCities";
+
+import { continents } from "../utils/continents";
 
 interface ICity {
   id: string;
@@ -47,7 +48,7 @@ export default function Continent({ continent }: IContinentProps) {
           backgroundPosition="center"
           backgroundRepeat="no-repeat"
         >
-          <Box w="full" h="full" backgroundColor="rgba(0,0,0,0.5)" px={4}>
+          <Box w="full" h="full" backgroundColor="rgba(0,0,0,0.5)">
             <Flex
               w="full"
               h="full"
@@ -56,6 +57,7 @@ export default function Continent({ continent }: IContinentProps) {
               align={["center", "center", "end"]}
               justify={["center", "center", "flex-start"]}
               pb={[0, 0, "3rem"]}
+              px={4}
             >
               <Text
                 fontSize={["1.75rem", "3rem"]}
@@ -75,7 +77,7 @@ export default function Continent({ continent }: IContinentProps) {
           cities100={continent.cities100}
         />
 
-        <ContinentCities />
+        <ContinentCities cities={continent.cities} />
       </Box>
     </>
   )

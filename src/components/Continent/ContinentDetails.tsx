@@ -20,7 +20,7 @@ export function ContinentDetails({
       mx="auto"
       px={4}
       mt={["1.5rem", "1.5rem", "5rem"]}
-      flexDir={["column", "column", "row"]}
+      flexDir={["column", "column", "column", "row"]}
       gap={["1rem", "1rem", "4.375rem"]}
     >
       <Text
@@ -31,6 +31,7 @@ export function ContinentDetails({
       </Text>
       <Flex
         flex="1"
+        flexDir={["column", "row"]}
         gap="2.625rem"
         flexWrap={["wrap", "wrap", "nowrap"]}
       >

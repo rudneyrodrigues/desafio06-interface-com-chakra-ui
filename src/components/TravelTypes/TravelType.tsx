@@ -1,4 +1,4 @@
-import { Icon, Link, LinkProps, Text } from "@chakra-ui/react";
+import { Box, Icon, Link, LinkProps, Text } from "@chakra-ui/react";
 import { Circle } from "phosphor-react";
 import { ElementType } from "react";
 
@@ -10,7 +10,7 @@ interface TravelTypeProps extends LinkProps {
 
 export function TravelType({ icon, title, href, ...rest }: TravelTypeProps) {
   return (
-    <Link
+    <Box
       display="flex"
       flexDirection={["row", "column"]}
       alignItems="center"
@@ -20,15 +20,6 @@ export function TravelType({ icon, title, href, ...rest }: TravelTypeProps) {
       p={4}
       rounded="lg"
       color="brand.100"
-      _hover={{
-        textDecoration: "none",
-        backgroundColor: "gray.50",
-      }}
-      _dark={{
-        _hover: {
-          backgroundColor: "gray.900",
-        }
-      }}
     >
       <Icon
         as={icon}
@@ -53,6 +44,6 @@ export function TravelType({ icon, title, href, ...rest }: TravelTypeProps) {
       >
         {title}
       </Text>
-    </Link>
+    </Box>
   )
 }
